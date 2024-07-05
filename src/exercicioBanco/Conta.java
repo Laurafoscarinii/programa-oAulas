@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class Conta {
     private String senha;
-
     private String titular;
     private String identificador;
     protected float saldo;
@@ -40,6 +39,7 @@ public class Conta {
         id+=aleatorio.nextInt(1000,2000);
         identificador = id;
     }
+
 
 
     public void setSenha(String senha){
