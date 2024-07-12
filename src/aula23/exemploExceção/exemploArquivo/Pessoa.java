@@ -1,6 +1,8 @@
-package aula22;
+package aula23.exemploExceção.exemploArquivo;
 
-public class Pessoa {
+import java.io.Serializable;
+
+public class Pessoa implements Serializable {
     public String getNome() {
         return nome;
     }
@@ -20,4 +22,9 @@ public class Pessoa {
     }
 
     private String sobrenome;
+    @Override
+
+    public String toString(){
+        return "nome: "+nome+" "+sobrenome;
+    }
 }
